@@ -33,3 +33,13 @@ def create_full_word_and_n_gram(text, n):
             for i in range(len(token)-n+1):
                 new_string += (token[i:i+n] + " ")
     return new_string.strip()
+
+def create_full_word_and_multiple_n_gram(text, n_gram_list):
+    new_string = ""
+    for token in text.split():
+        new_string += (token + " ")
+        for n in n_gram_list:
+            if len(token) > n:
+                for i in range(len(token)-n+1):
+                    new_string += (token[i:i+n] + " ")
+    return new_string.strip()
