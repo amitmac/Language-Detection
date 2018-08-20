@@ -24,3 +24,12 @@ def create_n_gram(text, n):
             for i in range(len(token)-n+1):
                 new_string += (token[i:i+n] + " ")
     return new_string.strip()
+
+def create_full_word_and_n_gram(text, n):
+    new_string = ""
+    for token in text.split():
+        new_string += (token + " ")
+        if len(token) > n:
+            for i in range(len(token)-n+1):
+                new_string += (token[i:i+n] + " ")
+    return new_string.strip()
