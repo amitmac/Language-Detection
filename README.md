@@ -14,3 +14,4 @@ Europarl: A Parallel Corpus for Statistical Machine Translation, Philipp Koehn, 
 | full-word-4-gram Model | 99.62      |
 | full-word-3-4-5 gram Model | 99.53      |
 | full-word-4-5 gram Model | 99.55     |
+| multiword-key-2-3-4-word-3-4-5-gram | 99.49 |

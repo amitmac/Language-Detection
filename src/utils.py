@@ -15,7 +15,7 @@ def preprocess(text):
             new_string += (token + " ")
     return new_string
 
-def create_n_gram(text, n):
+def create_n_gram(text, n): 
     new_string = ""
     for token in text.split():
         if len(token) <= n:
